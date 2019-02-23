@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" /><!-- 让浏览器以utf-8来解析当前网页-->
+	<meta name="keywords" content="关键词,关键字" />
+	<meta name="description" content="网页描述80字" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Vuejs demo1</title><!-- 网页标题-->
+	<style>
+		.active {
+			width: 100px;
+			height: 100px;
+			background-color: #a10;
+		}
+	</style>
+</head>
+<body>
+	<div class="gua">
+		<div>
+			<label>
+				男
+				<input v-model='sex' value="male" type="radio">
+			</label>
+			<label>
+				女
+				<input v-model='sex' value="female" type="radio">
+			</label>
+			<br>
+			{{sex}}
+		</div>
+		<div>
+			<label>
+				男
+				<input v-model='sexl' value="male" type="checkbox">
+			</label>
+			<label>
+				女
+				<input v-model='sexl' value="female" type="checkbox">
+			</label>
+			<br>
+			{{sexl}}
+		</div>
+		<div>
+			<textarea v-model='atr'></textarea>
+		</div>
+		<div>
+			<select v-model='who' multiple>
+				<option value="1">瓜</option>
+				<option value="2">萧瓜</option>
+
+			</select>	
+			{{who}}	
+		</div>
+	</div>
+<script src='https://cdn.bootcss.com/vue/2.6.6/vue.js'></script>
+<script src='js/main.js'></script>
+</body>
+</html>
